@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box
+}
+
+.topbar{
+    height: 0.4rem;
+    width: 100%;
+    position: relative;
+    background: rgba(0,0,0,.44);
+    background-image:linear-gradient(left,#f2295f,#ffbe2a);
+    overflow: hidden; 
+}
+.topbar .city_picker{
+display: inline-block;
+height: 0.4rem;
+position: absolute;
+font-size: 15px;
+line-height: 0.4rem;
+color: #fff;
+padding: 0 0.1rem;
+box-sizing: border-box;
+}
+.topbar .top_main{
+   position: absolute;
+   left: 0.6rem;
+    height: 0.4rem;
+    width:1rem;
+}
+.topbar .search{
+    position: absolute;
+    font-size: 16px;
+    color:#fff;
+    top:0.12rem;
+    left: 0.08rem;
+}
+.topbar .top_main input{
+  position: absolute;
+  border: 0;
+  width: 2.5rem;
+  top: 0.035rem;
+  height: 0.32rem;
+  border-radius: 0.05rem;
+  text-indent: 2em;
+  color: #fff;
+  outline: none;
+  font-size: 15px;    
+  background: hsla(0,0%,100%,.26);
+}  
+
+.topbar .top_main input::-webkit-input-placeholder { /* WebKit browsers */ 
+    letter-spacing: 0.02rem;
+    color: #fff;  
+    } 
+
+    .topbar .my{
+      position: absolute; 
+      height: 0.4rem;   
+      right: 0;
+    }
+    .topbar .my .user{
+        position: absolute;
+        color: #fff;
+        right: .1rem;
+        top: 0.1rem;
+        font-size: 26px
+    }
+    
+    /* home  entry */
+    .home_entry{
+        padding: 0 0.2rem;
+        overflow: hidden;
+        box-sizing: border-box;       
+    }
+
+
+    .home_entry ul::-webkit-scrollbar {
+        display: none
+      }
+
+    .home_entry  ul{
+        overflow: -webkit-paged-x;
+        white-space: nowrap;
+        width: 800px;
+        height: 100px;
+    }
+    .home_entry  ul  li{
+        margin-top: 20px;
+        width:100px ;
+        height: 120px ;
+        font-size: 15rem;
+        float: left;
+    }
+    .home_entry  ul  li img{
+        width: 60px;
+        height: 60px;
+        display: block;
+    }
+
+    .home_entry ul li p{
+        font-size: 14px;
+    }
+
+    .banner{
+        margin-top: 0.2rem;
+        overflow: hidden;
+        width: 100%;
+        height: 1.6rem;
+        /* background: red; */
+        padding: 0.2rem;
+        box-sizing: border-box;
+    }
+    .banner img{
+        border-radius:8px; 
+        width: 100%;
+        height: 100%;
+    }
+
+    /* home op */
+    .home_op{
+        width: 100%;
+        padding: 0.2rem;
+        position: relative;
+        box-sizing: border-box;
+    }
+    .home_op>div{
+        width: 50%;
+        height:1.6rem;
+    }
+    .home_op .left{
+        float: left;
+        /* background: yellow; */
+    }
+    .home_op .right{
+        float: right;
+    }
+    .home_op .left .top,.home_op .right .top,.home_op .right .bottom{
+        font-size: 15px;
+        height:50%;
+        background: white;
+        margin-right: 0.05rem;
+        box-sizing: border-box;
+        background: #F8F8F8;
+        position: relative;
+        padding: 0.1rem;
+        line-height: 0.2rem
+    } 
+     .home_op .left .top  .p1{
+        color: red;
+        font-size: 18px;
+        padding-bottom: 0.05rem;
+    }
+    .home_op  .left  .bottom{
+        height: 50%;
+        width: 100%;
+        position: relative;
+    }
+    .home_op  .left  .bottom img{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .home_op .right .top{
+        height: 50%;
+    }
+
+    .home_op .right .top img,.home_op .right .bottom img{
+        width: 0.6rem;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+  .home_op .right .top .p1{
+    font-size: 18px;
+    padding-bottom: 0.05rem;
+  }

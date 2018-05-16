@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="vue.js"></script>
+    <script src="vue-resource.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <button @click="get">获取</button>
+        {{msg}}
+    </div>
+
+    <script>
+        new Vue({
+            el: "#app",
+            data() {
+                return {
+                    msg: ""
+                }
+            },
+            methods: {
+                get() {
+                    // this.$http.get("./1.txt").then(res=>{
+                    //     console.log(res)
+                    //     this.msg=res.data
+                    // }),
+                    // this.$http.post("./1.txt").then(res=>{
+                    //     console.log(res)
+                    //     this.msg=res.data
+                    // })
+                    // ,
+
+                    this.$http.jsonp("https://sug.so.360.cn/suggest",{word:"chen"},{emulateJSON:true}).then(res=>{
+                            console.log(res.data.s)
+                            
+                    })
+
+
+
+                    // this.$http({
+                        // url: "1.txt",
+                        // method: "get",   //post
+                        // parmas: {}       //data 
+                    // }).then(function(res){
+                        // this.msg=res.data
+                    // })
+
+                }
+            }
+        })
+
+    </script>
+</body>
+
+</html>

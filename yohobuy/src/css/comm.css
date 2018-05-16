@@ -1,0 +1,92 @@
+/* 导航 */
+.boy_header {
+  position: relative;
+  height: 0.9rem;
+  width: 100%;
+}
+
+.boy_header .btn {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+}
+
+.boy_header .btn,
+.boy_header .search {
+  height: 0.9rem;
+  width: 15%;
+  font-size: 25px;
+  color: #fff;
+  line-height: 0.9rem;
+  text-align: center;
+}
+.boy_header .logo {
+  margin: 0 auto;
+  display: block;
+  width: 30%;
+  height: 0.9rem;
+  color: #fff;
+  background: url("https://cdn.yoho.cn/yohobuywap-node/6.5.51/img/channel/yohologo.png?16300c4efce") no-repeat 50%;
+  background-size: 100%;
+  vertical-align: middle;
+}
+
+.boy_header .search {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* banner */
+.banner {
+  width: 100%;
+  height: 3rem;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 你可能喜欢的 */
+.maybe_like {
+    background: #fff;
+    margin-top: 0.2rem;
+    border-top: 1px solid #ccc;
+  }
+  .maybe_like .maybe_tit {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 0.2rem;
+    text-align: center;
+    color: #dadada;
+    padding: 0.2rem 0 0.8rem 0;
+  }
+  
+  .maybe_like .maybe_tit > span {
+    color: #dadada;
+    padding-right: 5px;
+  }
+  .maybe_like .cont {
+    width: 100%;
+    height: 100%;
+  }
+  .maybe_like .cont li {
+    width: 43%;
+    height: 4.5rem;
+    float: left;
+    padding: 0.1rem 0.22rem;
+  }
+  .maybe_like .cont li img {
+    width: 100%;
+    height: 3.5rem;
+    background: #555;
+  }
+  .maybe_like .cont li > p {
+    font-size: 12px;
+    /* text-align: center; */
+  }
+  
+  .maybe_like .cont li span {
+    font-size: 12px;
+    display: block;
+  }
