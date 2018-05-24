@@ -13,8 +13,6 @@ export default {
       chartTwo:""
     };
   },
-
-
   methods: {
     drawLine() {
       let chartOne = this.$echarts.init(document.getElementById("chart01"));
